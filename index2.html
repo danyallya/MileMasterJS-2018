@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+
+</head>
+<body>
+<!-- content to be placed inside <body>…</body> -->
+<div class='circle-container'>
+    <div class="circle-gradiant"></div>
+    <div class="num-text">
+        -
+    </div>
+    <div class="logo">
+
+    </div>
+    <!--<a href='#' class='center'></a>-->
+    <!--<a href='#' class='deg0'></a>-->
+    <!--<a href='#' class='deg45'></a>-->
+    <!--<a href='#' class='deg135'></a>-->
+    <!--<a href='#' class='deg180'></a>-->
+    <!--<a href='#' class='deg225'></a>-->
+    <!--<a href='#' class='deg315'></a>-->
+</div>
+<input class="num" type="number" >
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script>
+
+    for (i = 0; i < 271; i++) {
+        $(".circle-container").append(
+            $('<a>').attr('class', "deg" + i + " " + "item"));
+    }
+    for (i = 0; i < 271; i++) {
+        $(".deg" + i).css("transform", "rotate(" + i + "deg)" + "" + "translate(8.4em)" + "" + "rotate(-" + 0 + "deg)");
+    }
+    for (i = 0; i < 70; i++) {
+        $(".deg" + i).css("opacity", "0.22");
+    }
+    for (i = 70; i < 100; i++) {
+        $(".deg" + i).css("opacity", "0.20");
+    }
+    for (i = 100; i < 120; i++) {
+        $(".deg" + i).css("opacity", "0.18");
+    }
+    for (i = 120; i < 160; i++) {
+        $(".deg" + i).css("opacity", "0.16");
+    }
+    for (i = 160; i < 200; i++) {
+        $(".deg" + i).css("opacity", "0.14");
+    }
+    for (i = 200; i < 220; i++) {
+        $(".deg" + i).css("opacity", "0.12");
+    }
+    for (i = 220; i < 240; i++) {
+        $(".deg" + i).css("opacity", "0.10");
+    }
+    for (i = 240; i < 250; i++) {
+        $(".deg" + i).css("opacity", "0.08");
+    }
+    for (i = 250; i < 260; i++) {
+        $(".deg" + i).css("opacity", "0.06");
+    }
+    for (i = 260; i < 270; i++) {
+        $(".deg" + i).css("opacity", "0.04");
+    }
+    // for (i = 0; i < 361; i++) {
+    //     if (i % 2 === 0) {
+    //         $(".deg" + i).each(function () {
+    //             if ($(this).is(":even")) {
+    //                 $(this).css("transform", "rotate(" + i + "deg)" + "" + "translate(195px)" + "" + "rotate(-" + 0 + "deg)");
+    //
+    //             }
+    //             if ($(this).is(":odd")) {
+    //                 $(this).css("transform", "rotate(" + i + "deg)" + "" + "translate(12em)" + "" + "rotate(-" + 0 + "deg)");
+    //
+    //             }
+    //
+    //         })
+    //     }
+    // }
+    var arr = ['0', '30', '60', '90', '120', '150', '180', '210', '240', '269'];
+    var obj = {
+        0: "0",
+        30: "20",
+        60: "40",
+        90: "60",
+        120: "80",
+        150: "100",
+        180: "120",
+        210: "140",
+        240: "160",
+        269: "180"
+    };
+    for (var i = 0, l = arr.length; i < l; i++) {
+        $(".deg" + arr[i]).append(
+            $('<div>').attr('class', "text"));
+        $(".deg" + arr[i] + " " + ".text").html(obj[arr[i]]);
+
+    }
+    $("input").on("change paste keyup", function () {
+        var num = $(this).val();
+        $(".num-text").html(num);
+        num = 1.5 * num;
+        num = num + 1;
+        var intvalue = Math.round(num);
+        for (i = 0; i < intvalue; i++) {
+
+            $(".deg" + i).addClass("active");
+
+
+        }
+        for (g = intvalue; g < 272; g++) {
+            $(".deg" + g).removeClass("active");
+
+        }
+
+    })
+</script>
+</body>
+</html>

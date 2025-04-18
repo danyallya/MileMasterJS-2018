@@ -1,0 +1,141 @@
+@font-face {
+    font-family: iransans;
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/iransans.woff) format("woff")
+}
+
+@font-face {
+    font-family: iransans-num;
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/iransans-fa-num-bold.woff) format("woff")
+}
+
+@font-face {
+    font-family: iransans;
+    font-style: normal;
+    font-weight: 700;
+    src: url(../fonts/iransans-bold.woff) format("woff")
+}
+
+body {
+    direction: rtl;
+    margin: auto;
+    font-family: iransans-num !important;
+    position: relative;
+    width: 260px;
+    height: 260px;
+}
+
+.main {
+    background-color: rgb(0, 0, 0);
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 20px;
+    height: 100%;
+}
+
+.dashboard {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    height: 100%;
+
+}
+
+.dashboard .circle-one {
+    background: linear-gradient(#ffffff17, rgba(255, 255, 255, 0));
+    /*background-color: #ffffff17;*/
+    width: 100%;
+    /* opacity: 0.15; */
+    position: absolute;
+    height: 100%;
+    top: 0;
+}
+
+.dashboard .num {
+    background: url(../image/d.png);
+    width: 248.5px;
+    position: absolute;
+    top: 0;
+    right: -0.5%;
+    height: 130.9px;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 5%;
+
+}
+
+.dashboard .circle-tow {
+    background: linear-gradient(#ffffff1a, rgba(255, 255, 255, 0));
+    position: relative;
+    width: 183.5px;
+    height: 70%;
+    margin: 0 auto;
+    z-index: 2122;
+    margin-top: 15%;
+    border-radius: 50%;
+}
+
+.rotated-half-circles {
+    width: 100%;
+    height: 100%;
+    border: 14px solid #0001ee;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    transform: rotate(0deg);
+    right: 0;
+    top: 0%;
+}
+
+.rotated-half-circle {
+    width: 182.5px;
+    height: 182px;
+    position: absolute;
+    border: 20px solid #ffffffeb;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    transform: rotate(-224deg);
+    transition: .8s all ease-out;
+    right: 41px;
+    top: 21%;
+}
+
+.circle-hide {
+    /* background: url(../image/d.png); */
+    width: 248.5px;
+    position: absolute;
+    top: 0;
+    right: -0.5%;
+    height: 115px;
+    overflow: hidden;
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+    top: 6%;
+}
+
+.number-text {
+    font-size: 39px;
+    margin: 0 auto;
+    /* margin-top: 36%; */
+    padding-top: 27%;
+    width: auto;
+    height: 48%;
+    text-align: center;
+    color: white;
+}
+
+.get {
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+}

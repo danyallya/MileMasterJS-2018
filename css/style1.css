@@ -1,0 +1,258 @@
+@font-face {
+    font-family: iransans;
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/iransans.woff) format("woff")
+}
+
+@font-face {
+    font-family: iransans-num;
+    font-style: normal;
+    font-weight: 700;
+    src: url(../fonts/ARLRDBD.TTF) format("woff")
+}
+
+@font-face {
+    font-family: iransans;
+    font-style: normal;
+    font-weight: 700;
+    src: url(../fonts/iransans-bold.woff) format("woff")
+}
+
+body {
+    direction: rtl;
+    margin: auto;
+    font-family: iransans-num !important;
+    position: relative;
+    width: 260px;
+    height: 260px;
+    background-color: rgba(0, 0, 0, 0.77);
+}
+
+.circle-container {
+    position: relative;
+    width: 93%;
+    border: 1px solid white;
+    height: 93%;
+    padding: 1.5em;
+    transform: rotate(105deg);
+    border-radius: 50%;
+    margin: 1.75em auto 0;
+}
+
+/*.circle-container a:nth-child(n) {*/
+/*display: block;*/
+/*overflow: hidden;*/
+/*position: absolute;*/
+/*top: 10px;*/
+/*width: 5px;*/
+/*right: 49%;*/
+/*top: 50%;*/
+/*}*/
+
+.circle-container a {
+    display: block;
+    /* overflow: hidden; */
+    position: absolute;
+    top: 49.7%;
+    left: 48%;
+    width: 12px;
+}
+
+.circle-container img {
+    display: block;
+    width: 100%;
+}
+
+/* 12em = half the width of the wrapper */
+.deg45 {
+    transform: rotate(45deg) translate(8em) rotate(-45deg);
+}
+
+.item {
+    width: 10px;
+    height: 1px;
+    position: relative;
+    background-color: #ffffff;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+
+.num-text {
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    top: 35%;
+    right: 32%;
+    text-align: center;
+    font-size: 50px;
+    transform: rotate(-105deg);
+    box-sizing: border-box;
+    font-weight: bold;
+    color: white;
+}
+
+.logo {
+    position: absolute;
+    width: 23%;
+    height: 21%;
+    /* background-size: 68px; */
+    top: 44%;
+    right: 58%;
+    box-sizing: border-box;
+    color: white;
+    background: url(../image/logo.png);
+    background-size: 70px;
+    background-repeat: no-repeat;
+    transform: rotate(-106deg);
+}
+
+.item.active {
+    opacity: 1 !important;
+}
+
+.circle-gradiant {
+    position: absolute;
+    /* background: linear-gradient( rgba(6,88,139,1) 0%, rgba(6,88,139,1) 4%, rgba(0,0,0,1) 100%); */
+    background: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(6, 88, 139, 1));
+    width: 97.5%;
+    height: 97.5%;
+    top: 1%;
+    border-radius: 50%;
+    overflow: hidden;
+    right: 1%;
+    /* margin: 25px; */
+    /* box-sizing: border-box; */
+}
+
+.deg0 {
+    width: 20px !important;
+    right: 47.7% !important;
+}
+
+.text {
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    top: -9px;
+    transform: rotate(-12deg);
+    right: 26px;
+}
+
+.deg46 .text {
+    transform: rotate(224deg);
+
+}
+
+.deg30 {
+    width: 20px !important;
+    right: 46.5% !important;
+    transform: rotate(28.8deg) translate(8em) rotate(-0deg) !important;
+    top: 50.9% !important;
+}
+
+.deg90 .text {
+    transform: rotate(168deg);
+
+}
+
+.deg30 .text {
+    transform: rotate(228deg);
+}
+
+.deg60 .text {
+    transform: rotate(198deg);
+}
+
+.deg120 .text {
+    transform: rotate(139deg);
+}
+
+.deg0 .text {
+    transform: rotate(75deg);
+}
+
+.deg150 .text {
+    transform: rotate(105deg);
+}
+
+.deg210 .text {
+    transform: rotate(45deg);
+}
+
+.deg240 .text {
+    transform: rotate(18deg);
+}
+
+.deg60 {
+    width: 20px !important;
+    top: 50.8% !important;
+    transform: rotate(58.9deg) translate(8em) rotate(-0deg) !important;
+    right: 47.1% !important;
+}
+
+.deg90 {
+    width: 20px !important;
+    top: 48.4% !important;
+    right: 46.8% !important;
+}
+
+.deg132 .text {
+    transform: rotate(138deg);
+
+}
+
+.deg120 {
+    width: 20px !important;
+    top: 50.3% !important;
+    transform: rotate(120deg) translate(8em) rotate(-0deg) !important;
+    right: 47.2% !important;
+}
+
+.deg150 {
+    width: 20px !important;
+    top: 49.8% !important;
+    transform: rotate(149.5deg) translate(8em) rotate(-0deg) !important;
+    right: 47.6% !important;
+}
+
+.deg180 .text {
+    transform: rotate(76deg);
+
+}
+
+.deg180 {
+    width: 20px !important;
+
+}
+
+.deg226 .text {
+    transform: rotate(45deg);
+
+}
+
+.deg210 {
+    width: 20px !important;
+    top: 49.7% !important;
+    transform: rotate(210.5deg) translate(8em) rotate(-0deg) !important;
+    right: 47.5% !important;
+}
+
+.deg240 {
+    width: 20px !important;
+    top: 48.9% !important;
+    transform: rotate(240deg) translate(8em) rotate(-0deg) !important;
+    right: 47.2% !important;
+}
+
+.deg269 {
+    width: 20px !important;
+    right: 46.9% !important;
+    top: 50.8% !important;
+
+}
+
+.deg270 {
+    display: none !important;
+}
