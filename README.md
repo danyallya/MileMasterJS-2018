@@ -1,6 +1,6 @@
 # MileMasterJS - Interactive Mileage Dashboard
 
-![Dashboard 1 Preview](dashboard1.png) ![Dashboard 2 Preview](dashboard2.png)
+![Dashboard 1 Preview](https://github.com/danyallya/MileMasterJS-2018/blob/master/1.PNG) ![Dashboard 2 Preview](https://github.com/danyallya/MileMasterJS-2018/blob/master/2.PNG)
 
 ## Overview
 MileMasterJS is a JavaScript project featuring two interactive mileage dashboards with different visualization styles. The dashboards display numerical input with circular progress indicators.
