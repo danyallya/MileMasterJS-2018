@@ -14,7 +14,7 @@ MileMasterJS is a JavaScript project featuring two interactive mileage dashboard
 
 ## Installation
 ```bash
-git clone https://github.com/yourusername/MileMasterJS-2018.git
+git clone https://github.com/danyallya/MileMasterJS-2018.git
 cd MileMasterJS-2018
 ```
 
